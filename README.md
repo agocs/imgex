@@ -41,7 +41,7 @@ Let's say you have two images, and have the *n* by *n* Imgex calculated for each
 
 Perform this for corresponding segment for the two images, generating an overlap matrix. If the overlap matrix consists largely of positive values approaching 1, the two images are similar. If the matrix consists of negative values, the two images are dissimilar. If the two images are sufficently similar, increase *n* and compare again until the images become dissimilar or *n* becomes sufficently high for your purposes.
 
-```
+```python
 # confidence intervals are for the same segment of two images.
 # intervals are expressed as (low,high)
 # overlap is the amount of the two confidence intervals that overlap
