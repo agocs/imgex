@@ -1,7 +1,7 @@
 Imgex
 =====
 
-An index for image similarity, image comparison algorithm, and Python implementation thereof.
+An index for image similarity, an image comparison algorithm, and a Python implementation thereof.
 
 What's the big idea?
 ====================
