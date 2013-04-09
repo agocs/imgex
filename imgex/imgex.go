@@ -11,7 +11,15 @@ import (
 
 func main(){
 
-	image_file, err := os.Open("Marceline.jpg")
+	filename := "Marceline.jpg" //default
+
+	if len(os.Args) > 1 {
+		filename = os.Args[1]
+	} else {
+		fmt.Println("Usage: imgex.exe [filename]. No file name found, defaulting to Marceline.jpg")
+	}
+
+	image_file, err := os.Open(filename)
 	if err != nil {
 		log.Fatal(err)
 	}
